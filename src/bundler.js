@@ -22,16 +22,16 @@ const createAsset = (filename) => {
     // 3. AST -> JSON
     traverse(ast, {
         // 获取type为ImportDeclaration的node
-        ImportDeclaration: ({node}) => {
+        ImportDeclaration: ({ node }) => {
             // console.log(node);
             dependencies.push(node.source.value)
         }
     })
-    
+
     // console.log(dependencies);
     // 4. 返回结果，
     // 至此，我们可以便利依赖生成依赖关系图了
-    const id = ID ++
+    const id = ID++
     return {
         id,
         filename,
@@ -47,6 +47,9 @@ const createGraph = (entry) => {
     const mainAsset = createAsset(entry)
     console.log(mainAsset);
 
+    // 2. 遍历依赖 B/DFS
+    const queue = [] 
+    
 
 }
 
