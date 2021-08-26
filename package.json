@@ -1,0 +1,32 @@
+{
+  "name": "simpleWebpack",
+  "version": "1.0.0",
+  "description": "### bundler是什么？ 它是我们可以在模块化地写代码",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanHHHHH/simpleWebpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FanHHHHH/simpleWebpack/issues"
+  },
+  "homepage": "https://github.com/FanHHHHH/simpleWebpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/parser": "^7.15.3",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/traverse": "^7.15.0"
+  },
+  "dependencies": {
+    "babylon": "^6.18.0"
+  }
+}
