@@ -4,6 +4,7 @@ const babylon = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
 const babel = require("@babel/core");
 
+// 测试git rebase 的主分支
 
 let ID = 0;
 //读取文件信息，并获得当前js文件的依赖关系
